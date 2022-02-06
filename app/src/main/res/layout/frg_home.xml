@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="57dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <ExpandableListView
+            android:id="@+id/expandableListView_home_task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_background"
+            android:choiceMode="multipleChoice"
+            android:groupIndicator="@null"
+            android:listSelector="#00000000" />
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleview_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btn_home_start"
+                android:background="@drawable/home_background"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/btn_home_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_rectangle_3"
+                android:gravity="center"
+                android:text="开始清扫作业"
+                android:textColor="#ffffffff"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>
+

@@ -1,0 +1,6 @@
+include ':planbmsg'
+include ':app'
+rootProject.name = "GreyOX"
+
+//include ':frameWidget'
+//project(':frameWidget').projectDir = new File(settingsDir, '../Frame/frameWidget')
